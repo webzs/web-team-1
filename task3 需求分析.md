@@ -64,7 +64,7 @@ a.当前物品的信息（品牌、价格、新旧程度、状态）
 b.物品所有者的信息  
 c.显示类似物品  
 ######5.用例图  
-![image](C:\Users\Public\Pictures\Sample Pictures/1.png)   
+![image](http://b325.photo.store.qq.com/psb?/V14fWhKC060TwI/rqkDEd35WDy2tDrSodzj4POqPqLIiOSkJScHrIo8Ot0!/b/dBVRvcEcHgAA&bo=IAPhATAD6wEDAD8!)   
 ###2.3事务性需求  
 ####管理员界面需求（后台需求）：  
 ######1. 首页:  
@@ -88,7 +88,7 @@ c.显示类似物品
 •提过查看所有者的全部信息按钮  
 •显示类似物品  
 ######5.用例图    
-  
+  ![image](http://b323.photo.store.qq.com/psb?/V14fWhKC060TwI/zhppKc8aVxghJliPkKxjXl3F6cRyizPraR*MYtzMECY!/b/dEoLicDJKwAA&bo=VwOBAVcDgQEDACU!)
 ##第三章 质量需求  
 ###3.1 性能  
 能保证5000-10000的用户同时在线网站不会崩溃。搜索响应时间不超过5秒，在正常网速水平下服务器对请求的响应不超过5秒。
