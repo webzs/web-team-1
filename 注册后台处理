@@ -1,0 +1,30 @@
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <?php
+  
+  $name = $_POST['user_name'];
+	$psw = $_POST['user_password'];
+	$psw1 = $_POST['user_password_1'];
+	if($name===''||$psw!=$psw1||$psw===''||$psw1==='')
+	{
+		header("refresh:1;url=http://localhost/yiwu/regist.php");
+	}
+	else
+	{
+	$conn=mysql_connect("localhost","root","") or die("连接数据库服务器失败".mysql_error());
+	mysql_select_db("phpbook",$conn) or die("连接数据库失败".mysql_error());
+	mysql_query("set names 'utf8'");
+	$mysql_command= "INSERT INTO `user`(`id`, `password`) VALUES ("."'".$name."','".$psw."');";
+	$result = mysql_query($mysql_command,$conn);
+	  if($result){
+	     	 if (!isset($_COOKIE["UserName"])){
+	     	setcookie("UserName",$name,(time()+604800)); 
+	      }
+	     header("refresh:1;url=http://localhost/yiwu/index.php");
+	   }
+	  else{
+	    echo "账号已存在，重新输入";
+	       header("refresh:1;url=http://localhost/yiwu/regist.php");
+	    }
+	}
+	
+?>
