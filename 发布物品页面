@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>发布商品</title>
+
+<meta name="robots" content="noarchive">
+
+<meta name="verify-v1" content="5ANIL6jRe7QcKJM5XoSooZI/lPaoGFSSKpA3ZiLDVyo=" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="ico.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="ico.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/css.css" type="text/css">
+
+
+<script language="javascript" type="text/javascript">
+function addSubmit(){
+  if(form1.class_id.value=="")
+	{
+		alert("物品大类不能为空")
+		form1.class_id.focus();
+		return;
+	}
+	if(form1.product_name.value!="")
+	{
+		if(containInvalidChartwo(form1.product_name.value))
+		{
+			alert("你输入的物品标题中包含非法字符!");
+			form1.product_name.focus();
+			return;
+		}
+	}else{
+		alert("物品标题不能为空")
+		form1.product_name.focus();
+		return;
+	}
+	if(form1.product_key.value!="")
+	{
+		if(containInvalidChartwo(form1.product_key.value))
+		{
+			alert("你输入的搜索关键词中包含非法字符!");
+			form1.product_key.focus();
+			return;
+		}
+	}
+	if(form1.product_old.value=="")
+	{
+		alert("请选择物品新旧程度！")
+		form1.product_old.focus();
+		return;
+	}
+	if(form1.product_city.value=="")
+	{
+		alert("请选择是否同城交换！")
+		form1.product_old.focus();
+		return;
+	}
+	if(form1.product_didian.value=="")
+	{
+		alert("请填写交换范围！")
+		form1.product_old.focus();
+		return;
+	}
+	if(form1.product_xiangxididian.value=="")
+	{
+		alert("请填写街道地址！")
+		form1.product_old.focus();
+		return;
+	}
+	if(form1.product_pic.value=="")
+	{
+		alert("请选择物品图片，并点后面的上传按钮！")
+		return;
+	}
+	////////////////
+	if(form1.exchange.checked==true)
+	{
+		if(form1.product_money.value!="")
+		{
+			if(!isNumbers(form1.product_money.value))
+			{
+				alert("出售价格必须为数字形式！")
+				form1.product_money.focus();
+				return;
+			}
+		}else{
+			alert("请填写出售价格！")
+			form1.product_money.focus();
+			return;
+		}
+	}////////////
+	if(form1.xiaci[0].checked!=true && form1.xiaci[1].checked!=true)
+	{
+		alert("请选择物品是否有瑕疵！")
+		return;
+	}
+	if(form1.xiaci[1].checked==true && form1.product_issue.value!="")
+	{
+		if(containInvalidChartwo(form1.product_issue.value))
+		{
+			alert("你输入的物品瑕疵描述中包含非法字符!");
+			return;
+		}
+	}
+	form1.action="?action=add";
+	form1.submit();
+	//alert("OK")
+}
+</script>
+<style type="text/css">
+<!--
+.STYLE3 {color: #999999}
+-->
+.guanggao1 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 100px;
+	background-image: url(image/yishusheji53.jpg);
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+</style>
+</head>
+
+<body>
+<center><div class="guanggao1" >  <span class="guanspan"> <marquee direction="right" scrollamount="10">我的主页</marquee></span></div></center>
+
+
+
+	
+
+<table width="980"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="5" background="images/top_mubiao.gif"></td>
+  </tr>
+</table>
+<table width="980"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top" height="6"></td>
+  </tr>
+  <tr>
+    <td valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="230" valign="top" bgcolor="#F3F8FD"><meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#AACCEE">
+      <tr>
+        <td bgcolor="#FCFDFE"><table width="94%"  border="0" align="center" cellpadding="0" cellspacing="0">
+		<tr>
+            <td width="20" height="25"><img src="images/zhuye.gif" width="13" height="14"></td>
+            <td height="25" style="padding-top:4px;"><a href="index.php" class="text">易物首页</a>&nbsp;&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="1" colspan="2" background="images/line.gif"></td>
+            </tr>
+          <tr>
+            <td height="1" colspan="2" background="images/line.gif"></td>
+            </tr>
+          <tr>
+            <td height="25"><img src="images/add.gif" width="15" height="15"></td>
+            <td style="padding-top:4px;"><a href="mypage.php" class="text">个人管理中心首页</a><a href="product_add.asp" class="text"></a></td>
+          </tr>
+		  <tr>
+            <td height="1" colspan="2" background="images/line.gif"></td>
+            </tr>
+          
+		  <tr>
+            <td height="1" colspan="2" background="images/line.gif"></td>
+            </tr>
+		  <tr>
+            <td height="25"><img src="images/user.gif" width="13" height="13" /></td>
+		    <td height="25" style="padding-top:4px;">查看已发&nbsp;&nbsp;</td>
+		    </tr>
+          	<tr>
+            <td height="1" colspan="2" background="images/line.gif"></td>
+            </tr>
+          <tr>
+            <td height="25"><img src="images/l.gif" width="13" height="13"></td>
+			
+            <td style="padding-top:4px;">我收到的交换邀请&nbsp;</td>
+			
+          </tr>
+		  <tr>
+            <td height="1" colspan="2" background="images/line.gif"></td>
+            </tr>
+          <tr>
+            <td height="25"><img src="images/q.gif" width="13" height="13"></td>
+			
+            <td style="padding-top:4px;">我发出的交换请求&nbsp;</td>
+			
+          </tr>
+		  <tr>
+            <td height="1" colspan="2" background="images/line.gif"></td>
+            </tr>
+          <tr>
+            <td height="25"><img src="images/list.gif" width="13" height="13"></td>
+            <td style="padding-top:4px;">成功的交换记录</td>
+          </tr>
+		  <tr>
+            <td height="1" colspan="2" background="images/line.gif"></td>
+            </tr>
+			<tr>
+            <td height="25"><img src="images/list_no.gif" width="13" height="13"></td>
+            <td style="padding-top:4px;">拒绝的交换记录</td>
+          </tr>
+		  <tr>
+            <td height="1" colspan="2" background="images/line.gif"></td>
+            </tr>
+          <tr>
+            <td height="25"><img src="images/ok.gif" width="13" height="13"></td>
+            <td style="padding-top:4px;">个人资料修改</td>
+          </tr>
+		  <tr>
+            <td height="1" colspan="2" background="images/line.gif"></td>
+            </tr>
+			<tr>
+            <td height="25"><img src="images/rzzx.gif" width="14" height="14"></td>
+            <td style="padding-top:4px;">实名认证中心</td>
+          </tr>
+		  <tr>
+            <td height="1" colspan="3" background="images/line.gif"></td>
+            </tr>
+		  <tr>
+		    <td height="25"><img src="images/xiaoxi.gif" width="13" height="13" /></td>
+		    <td style="padding-top:4px;">我的留言信息</td>
+		    </tr>
+		  <tr>
+            <td height="25"><img src="images/xiaoxi.gif" width="13" height="13"></td>
+			
+            <td style="padding-top:4px;">我的消息管理中心&nbsp;</td>
+			
+          </tr>
+		  <tr>
+            <td height="1" colspan="2" background="images/line.gif"></td>
+            </tr>
+		  
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="6" bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td height="27" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="6" bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td height="27" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+</table>
+</td>
+        <td width="10"></td>
+        <td valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td background="images/nei_1.gif">&nbsp;添加交换物品</td>
+                <td width="25"><img src="images/nei.gif" width="25" height="28"></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="40"><table width="100%"  border="0" cellpadding="2" cellspacing="0">
+              <form name="form1" action="" method="post">
+			  <input name="product_address" id="product_address" type="hidden" value="福建">
+		<input name="product_address1" id="product_address1" type="hidden" value="厦门">
+		<input name="user_money" id="user_money" type="hidden" value="50">
+		
+                <tr>
+                  <td width="100" height="40" class="text"><div align="right">物品分类：</div></td>
+                  <td class="text"><span style="border:1px solid #AACCEE;width:100px;"><select name="class_xiao" id="class_xiao" style="width:100px;margin:-1px">
+            <option value="" selected>其它</option>
+            <option value="" selected>生活用品</option>
+          </select>
+				  </span>
+          <span class="lanse">(*必填)</span><span class="huise">物品大类为必填，选择小类可以增加搜索几率</span></td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+                <tr>
+                  <td height="40" class="text"><div align="right">物品标题：</div></td>
+                  <td class="text"><input type="text" name="product_name" id="product_name" class="text" style="width:300px; height:22px;BORDER-RIGHT: #AACCEE 1px solid;BORDER-TOP: #AACCEE 1px solid; BORDER-LEFT: #AACCEE 1px solid; BORDER-BOTTOM: #AACCEE 1px solid; background-image:url(images/text.gif)">
+                      <span class="lanse">(*必填)</span><span class="huise">可以增加一些关键字帮助搜索</span></td>
+                </tr>
+                <tr>
+                  <td height="40" class="text"><div align="right">想换什么：</div></td>
+                  <td class="text"><input name="product_name1" type="text" class="text" id="product_name1" style="width:300px; height:22px;BORDER-RIGHT: #AACCEE 1px solid;BORDER-TOP: #AACCEE 1px solid; BORDER-LEFT: #AACCEE 1px solid; BORDER-BOTTOM: #AACCEE 1px solid; background-image:url(images/text.gif)" value="不限">
+                    <span class="lanse">如：想换电脑</span><span class="huise">。用"，"号隔开可填多个物品</span></td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+      
+                <tr>
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+                <tr>
+                  <td height="40" class="text"><div align="right">新旧程度：</div></td>
+                  <td class="text"><span style="border:1px solid #AACCEE;width:120px;">
+                    <select name="product_old" id="product_old" style="width:120px;margin:-1px">
+                      <option selected>请选择新旧程度</option>
+					  <option value="全新">全新</option>
+                      <option value="9成新" style=" background-color:#F5FAFE">9成新</option>
+                      <option value="8成新">8成新</option>
+                      <option value="7成新" style=" background-color:#F5FAFE">7成新</option>
+					  <option value="6成新">6成新</option>
+                      <option value="5成新" style=" background-color:#F5FAFE">5成新</option>
+					  <option value="4成新">4成新</option>
+					  <option value="很旧" style=" background-color:#F5FAFE">很旧</option>
+                    </select>
+                  </span> <span class="lanse">(*必填)</span></td>
+                </tr>
+                <tr>
+                  <td height="40" class="text">&nbsp;&nbsp;&nbsp;QQ</td>
+                  <td class="text"><input name="product_xiangxididian" type="text" class="text" id="product_didian" style="width:300px; height:22px;BORDER-RIGHT: #AACCEE 1px solid;BORDER-TOP: #AACCEE 1px solid; BORDER-LEFT: #AACCEE 1px solid; BORDER-BOTTOM: #AACCEE 1px solid; background-image:url(images/text.gif)"></td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+				<tr>
+				  <td height="1" colspan="2" background="images/line.gif"></td>
+				  </tr>
+                <tr class="lvse">
+                 
+                </tr>
+		<tr class="lvse">
+                  
+                </tr>
+                <tr>
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+                <tr>
+                  <td height="100" class="text"><div align="right">物品图片：</div></td>
+                  <td class="text">&nbsp;<img src="" width="100" height="100" /></td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+                
+                <tr id="m_1" style="display:none">
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+                <tr>
+                  <td height="40" class="text"><div align="right">物品瑕疵：</div></td>
+                  <td class="text"><input name="xiaci" id="xiaci" type="radio" value="1" onClick="javascript:if(this.checked==true){getElementById('i_1').style.display='none';getElementById('i_2').style.display='none'}else{getElementById('i_1').style.display='';getElementById('i_2').style.display=''}">
+无瑕疵
+<input type="radio" name="xiaci" id="xiaci" value="2"  onClick="javascript:if(this.checked==true){getElementById('i_1').style.display='';getElementById('i_2').style.display=''}else{getElementById('i_1').style.display='none';getElementById('i_2').style.display='none'}">
+有瑕疵&nbsp;&nbsp;(*必填)</td>
+                </tr>
+                <tr id="i_1" style="display:none">
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+                <tr id="i_2" style="display:none">
+                  <td height="40" class="text"><div align="right">瑕疵描述：</div></td>
+                  <td class="text"><textarea name="product_issue" id="product_issue" style="width:650px; height:100px;BORDER-RIGHT: #AACCEE 1px solid;BORDER-TOP: #AACCEE 1px solid; BORDER-LEFT: #AACCEE 1px solid; BORDER-BOTTOM: #AACCEE 1px solid; background-image:url(images/text_1.gif)"></textarea></td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+				<tr class="lvse">
+                  <td height="40" class="text"><div align="right" class="lvse">温馨提示：</div></td>
+                  <td class="text"><span class="lvse">本站文本编辑器支持上传图片，您也可以直接"复制"网络图片"粘贴"到本站文本编辑器内。</span></td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+                <tr>
+                  <td height="40" class="text"><div align="right">物品详情：</div></td>
+                  <td class="text">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="2" background="images/line.gif"></td>
+                </tr>
+                <tr>
+                  <td height="60" class="text">&nbsp;</td>
+                  <td><input name="Submit2" type="button" style="background-image:url(images/bottom3.gif); width:82px;height:22px; border-width:0; cursor:hand;padding-top:2px;" value="发布物品" onClick="addSubmit()"/>
+&nbsp;
+        <input name="Submit22" type="reset" style="background-image:url(images/bottom3.gif); width:82px;height:22px; border-width:0; cursor:hand;padding-top:2px;" value="清除重写"/></td>
+                </tr>
+			<tr>
+                  <td height="1" colspan="2" ></td>
+                </tr>
+             </form>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td valign="top" height="6"></td>
+  </tr>
+</table>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</body>
+</html>
