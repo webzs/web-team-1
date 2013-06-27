@@ -1,0 +1,1500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>硬盘</title>
+<meta name="verify-v1" content="5ANIL6jRe7QcKJM5XoSooZI/lPaoGFSSKpA3ZiLDVyo=" />
+<link rel="icon" href="ico.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="ico.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/css.css" type="text/css">
+<style type="text/css">
+.tb{
+  background-color:#AACCEE
+}
+.td_title{
+	background-color:#F3F8FD;
+	background-image:url(../images/1/title.gif)
+}
+.td_content{
+	background-color:#FFFFFF
+}
+.title_text{
+	 color:#0449BB
+}
+.textax{
+	BORDER-RIGHT: #AACCEE 1px solid;BORDER-TOP: #AACCEE 1px solid; BORDER-LEFT: #AACCEE 1px solid; BORDER-BOTTOM: #AACCEE 1px solid;
+}
+.guanspan{
+	font-size: 36px;
+	height: 30px;
+	width: 600px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	float: left;
+	font-style: italic;
+	color: #0F3;
+	}
+.guanggao img {
+	width: 800px;
+	height: 70px;
+}
+.guanggao {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 100px;
+	background-image: url(image/yishusheji53.jpg);
+	width: 1000px;
+}
+</style>
+<script language="javascript" src="page/js/js.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+function add(){
+	if(form1.content.value==""){
+		alert("请填写留言信息")
+		return;
+	}else{
+		
+			form1.action="book.asp?action=add&pid=10038&style=&music=";
+			form1.submit();
+		
+	}
+}
+function edit(ed){
+	if(document.getElementById("content_"+ed).value==""){
+		alert("请填写回复信息")
+		return;
+	}else{
+		if(containInvalidChartwo(document.getElementById("content_"+ed).value))
+		{
+			alert("对不起,你输入的回复内容中包含非法字符!");
+			return;
+		}else{
+			form1.action="book.asp?action=edit&pid=10038&style=&music=&id="+ed;
+			form1.submit();
+		}
+	}
+}
+</script>
+<script language="javascript"> 
+function face(fc){ 
+form1.content.value+="<img src=\"page/face\/"+fc+".gif\">" 
+} 
+function face1(fc1,va){ 
+document.getElementById("content_"+va).value+="<img src=\"page/face\/"+fc1+".gif\">" 
+} 
+</script>
+<script type="text/javascript">
+function toggle( targetId ) {
+if (document.getElementById){
+ target = document.getElementById( targetId );
+  if ( target.style.display == "none") {
+   target.style.display = ""; 
+  } else { 
+   target.style.display = "none";
+  }
+ }
+}
+</script>
+<style type="text/css">
+<!--
+.STYLE3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #003399;
+}
+.STYLE4 {color: #FF0000}
+-->
+body {
+	width: 1000px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	height: 2000px;
+}
+.dengzhu {
+	background-color: #FFF;
+	float: left;
+	width: 200px;
+	margin-top: 0px;
+	margin-left: 60px;
+	height: 30px;
+	font-size: 24px;
+}
+.shewei {
+	font-size: 24px;
+	background-color: #FFF;
+	float: left;
+	height: 30px;
+	width: 500px;
+	text-align: center;
+}
+.guanggao {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 100px;
+	background-image: url(image/yishusheji53.jpg);
+}
+.guanspan{
+	font-size: 36px;
+	height: 30px;
+	width: 600px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	float: left;
+	font-style: italic;
+	color: #0F3;
+	}
+.guanggao img {
+	width: 1000px;
+	height: 70px;
+}
+.daohang {
+	margin-top: 5px;
+	color: #FFF;
+	background-image: url(image/bg2.jpg);
+	height: 30px;
+	width: 1000px;
+}
+.faceul {
+	font-size: 24px;
+	height: 30px;
+	width: 1000px;
+	margin: 0px;
+}
+.faceul li {
+	float: left;
+	list-style-type: none;
+	width: 150px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 30px;
+	text-align: center;
+}
+.zhushang {
+	height: 1200px;
+	width: 1000px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	border: 0.5px solid #FFF;
+}
+#id1 {
+	margin-left: 5px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width: 1000px;
+}
+.zs1 {
+	height: 30px;
+	width: 200px;
+	margin-top: 5px;
+	border-bottom-width: thin;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #666;
+	border-left-color: #FFF;
+	border-bottom-style: solid;
+	background-image: url(image/1.GIF);
+	background-color: #093;
+	text-align: center;
+	font-style: italic;
+	color: #FC0;
+}
+.zs2 {
+	float: none;
+	height: 250px;
+	width: 1000px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.zs3 {
+	margin: 5px;
+	height: 240px;
+	width: 180px;
+	border: 0.5px solid #666;
+	float: left;
+}
+
+
+.zs3 img {
+	height: 180px;
+	width: 185px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 2px;
+}
+.sp1 {
+	font-size: 22px;
+	margin: 5px;
+	height: 30px;
+	width: 180px;
+	text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+<center>
+  <div id="id1"class="guanggao" >  <span class="guanspan"> <marquee direction="right" scrollamount="10">商品详情</marquee></span></div></center>
+<script language="javascript" src="js/js.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+	function $(id){return document.getElementById(id)}
+    function nav(num)
+    {
+	formsubmit.top_class.value=num;
+	//alert(formsubmit.top_class.value)
+	for(var i=1;i<=6;i++){
+	if(num==i){
+           $("nav_"+i).style.backgroundImage="url(images/top_ss.gif)";
+		   $("nav_"+i).style.color="#CCFF00";
+		   $("nav_"+i).style.fontSize="12px";
+		   $("nav_"+i).style.fontWeight="bold";
+        }else{
+           $("nav_"+i).style.backgroundImage="url()";
+		   $("nav_"+i).style.color="#FFFFFF";
+		   $("nav_"+i).style.fontSize="12px";
+		   $("nav_"+i).style.fontWeight="";
+		  }
+      }
+    }
+function topsubmit()
+{
+if(formsubmit.product_name.value!=''){
+		if(containInvalidChartwo(formsubmit.product_name.value)){
+		alert("对不起,你输入的查询关键字中包含非法字符!");
+		return;
+	}
+}
+if (formsubmit.top_class.value=="1"){
+	formsubmit.action="product_search.asp?action=topsubmit";
+	formsubmit.submit();
+}
+if (formsubmit.top_class.value=="2"){
+	formsubmit.action="product_search_2.asp?action=topsubmit";
+	formsubmit.submit();
+}
+if (formsubmit.top_class.value=="3"){
+	formsubmit.action="product_search_3.asp?action=topsubmit&class_id=技能";
+	formsubmit.submit();
+}
+if (formsubmit.top_class.value=="4"){
+	formsubmit.action="product_search_3.asp?action=topsubmit&class_id=虚拟";
+	formsubmit.submit();
+}
+if (formsubmit.top_class.value=="5"){
+	formsubmit.action="product_search_3.asp?action=topsubmit&class_id=游戏";
+	formsubmit.submit();
+}
+if (formsubmit.top_class.value=="6"){
+	formsubmit.action="product_search_3.asp?action=topsubmit&class_id=点卡";
+	formsubmit.submit();
+}
+}
+function sousuo(ss){
+	if(ss=="1"){
+		document.getElementById('ss_1').style.display = "none"
+		document.getElementById('ss_2').style.display = ""
+		document.getElementById('tb_1').style.display = ""
+		document.getElementById('product_name').style.width = "250px"
+     }
+	 if(ss=="2"){
+		document.getElementById('ss_1').style.display = ""
+		document.getElementById('ss_2').style.display = "none"
+		document.getElementById('tb_1').style.display = "none"
+		formsubmit.sheng_hidden.value=""
+		formsubmit.shi.value=""
+		formsubmit.sheng.value=""
+		document.getElementById('product_name').style.width = "400px"
+     }
+}
+</script>
+
+<script language = "JavaScript">
+var one_one_count;
+one_subcat = new Array();
+        
+one_subcat[0] = new Array("东城区","1","东城区");
+        
+one_subcat[1] = new Array("黄浦区","2","黄浦区");
+        
+one_subcat[2] = new Array("广州","3","广州");
+        
+one_subcat[3] = new Array("韶关","3","韶关");
+        
+one_subcat[4] = new Array("深圳","3","深圳");
+        
+one_subcat[5] = new Array("珠海","3","珠海");
+        
+one_subcat[6] = new Array("汕头","3","汕头");
+        
+one_subcat[7] = new Array("佛山","3","佛山");
+        
+one_subcat[8] = new Array("江门","3","江门");
+        
+one_subcat[9] = new Array("湛江","3","湛江");
+        
+one_subcat[10] = new Array("茂名","3","茂名");
+        
+one_subcat[11] = new Array("肇庆","3","肇庆");
+        
+one_subcat[12] = new Array("惠州","3","惠州");
+        
+one_subcat[13] = new Array("梅州","3","梅州");
+        
+one_subcat[14] = new Array("汕尾","3","汕尾");
+        
+one_subcat[15] = new Array("河源","3","河源");
+        
+one_subcat[16] = new Array("阳江","3","阳江");
+        
+one_subcat[17] = new Array("清远","3","清远");
+        
+one_subcat[18] = new Array("东莞","3","东莞");
+        
+one_subcat[19] = new Array("中山","3","中山");
+        
+one_subcat[20] = new Array("潮州","3","潮州");
+        
+one_subcat[21] = new Array("揭阳","3","揭阳");
+        
+one_subcat[22] = new Array("云浮","3","云浮");
+        
+one_subcat[23] = new Array("南京","4","南京");
+        
+one_subcat[24] = new Array("无锡","4","无锡");
+        
+one_subcat[25] = new Array("徐州","4","徐州");
+        
+one_subcat[26] = new Array("常州","4","常州");
+        
+one_subcat[27] = new Array("苏州","4","苏州");
+        
+one_subcat[28] = new Array("南通","4","南通");
+        
+one_subcat[29] = new Array("连云港","4","连云港");
+        
+one_subcat[30] = new Array("淮安","4","淮安");
+        
+one_subcat[31] = new Array("盐城","4","盐城");
+        
+one_subcat[32] = new Array("扬州","4","扬州");
+        
+one_subcat[33] = new Array("镇江","4","镇江");
+        
+one_subcat[34] = new Array("泰州","4","泰州");
+        
+one_subcat[35] = new Array("宿迁","4","宿迁");
+        
+one_subcat[36] = new Array("杭州","5","杭州");
+        
+one_subcat[37] = new Array("宁波","5","宁波");
+        
+one_subcat[38] = new Array("温州","5","温州");
+        
+one_subcat[39] = new Array("嘉兴","5","嘉兴");
+        
+one_subcat[40] = new Array("湖州","5","湖州");
+        
+one_subcat[41] = new Array("绍兴","5","绍兴");
+        
+one_subcat[42] = new Array("金华","5","金华");
+        
+one_subcat[43] = new Array("衢州","5","衢州");
+        
+one_subcat[44] = new Array("舟山","5","舟山");
+        
+one_subcat[45] = new Array("台州","5","台州");
+        
+one_subcat[46] = new Array("丽水","5","丽水");
+        
+one_subcat[47] = new Array("渝中区","6","渝中区");
+        
+one_subcat[48] = new Array("福州","7","福州");
+        
+one_subcat[49] = new Array("厦门","7","厦门");
+        
+one_subcat[50] = new Array("莆田","7","莆田");
+        
+one_subcat[51] = new Array("三明","7","三明");
+        
+one_subcat[52] = new Array("泉州","7","泉州");
+        
+one_subcat[53] = new Array("漳州","7","漳州");
+        
+one_subcat[54] = new Array("南平","7","南平");
+        
+one_subcat[55] = new Array("龙岩","7","龙岩");
+        
+one_subcat[56] = new Array("宁德","7","宁德");
+        
+one_subcat[57] = new Array("兰州","8","兰州");
+        
+one_subcat[58] = new Array("嘉峪关","8","嘉峪关");
+        
+one_subcat[59] = new Array("金昌","8","金昌");
+        
+one_subcat[60] = new Array("白银","8","白银");
+        
+one_subcat[61] = new Array("天水","8","天水");
+        
+one_subcat[62] = new Array("武威","8","武威");
+        
+one_subcat[63] = new Array("张掖","8","张掖");
+        
+one_subcat[64] = new Array("平凉","8","平凉");
+        
+one_subcat[65] = new Array("酒泉","8","酒泉");
+        
+one_subcat[66] = new Array("庆阳","8","庆阳");
+        
+one_subcat[67] = new Array("定西","8","定西");
+        
+one_subcat[68] = new Array("陇南","8","陇南");
+        
+one_subcat[69] = new Array("临夏","8","临夏");
+        
+one_subcat[70] = new Array("甘南","8","甘南");
+        
+one_subcat[71] = new Array("南宁","9","南宁");
+        
+one_subcat[72] = new Array("柳州","9","柳州");
+        
+one_subcat[73] = new Array("桂林","9","桂林");
+        
+one_subcat[74] = new Array("梧州","9","梧州");
+        
+one_subcat[75] = new Array("北海","9","北海");
+        
+one_subcat[76] = new Array("防城港","9","防城港");
+        
+one_subcat[77] = new Array("钦州","9","钦州");
+        
+one_subcat[78] = new Array("贵港","9","贵港");
+        
+one_subcat[79] = new Array("玉林","9","玉林");
+        
+one_subcat[80] = new Array("百色","9","百色");
+        
+one_subcat[81] = new Array("贺州","9","贺州");
+        
+one_subcat[82] = new Array("河池","9","河池");
+        
+one_subcat[83] = new Array("南宁","9","南宁");
+        
+one_subcat[84] = new Array("柳州","9","柳州");
+        
+one_subcat[85] = new Array("贵阳","10","贵阳");
+        
+one_subcat[86] = new Array("六盘水","10","六盘水");
+        
+one_subcat[87] = new Array("遵义","10","遵义");
+        
+one_subcat[88] = new Array("安顺","10","安顺");
+        
+one_subcat[89] = new Array("铜仁","10","铜仁");
+        
+one_subcat[90] = new Array("黔西南","10","黔西南");
+        
+one_subcat[91] = new Array("毕节","10","毕节");
+        
+one_subcat[92] = new Array("黔东南","10","黔东南");
+        
+one_subcat[93] = new Array("黔南","10","黔南");
+        
+one_subcat[94] = new Array("海口","11","海口");
+        
+one_subcat[95] = new Array("三亚","11","三亚");
+        
+one_subcat[96] = new Array("其他","11","其他");
+        
+one_subcat[97] = new Array("石家庄","12","石家庄");
+        
+one_subcat[98] = new Array("唐山","12","唐山");
+        
+one_subcat[99] = new Array("秦皇岛","12","秦皇岛");
+        
+one_subcat[100] = new Array("邯郸","12","邯郸");
+        
+one_subcat[101] = new Array("邢台","12","邢台");
+        
+one_subcat[102] = new Array("保定","12","保定");
+        
+one_subcat[103] = new Array("张家口","12","张家口");
+        
+one_subcat[104] = new Array("承德","12","承德");
+        
+one_subcat[105] = new Array("沧州","12","沧州");
+        
+one_subcat[106] = new Array("廊坊","12","廊坊");
+        
+one_subcat[107] = new Array("衡水","12","衡水");
+        
+one_subcat[108] = new Array("哈尔滨","13","哈尔滨");
+        
+one_subcat[109] = new Array("齐齐哈尔","13","齐齐哈尔");
+        
+one_subcat[110] = new Array("鸡西","13","鸡西");
+        
+one_subcat[111] = new Array("鹤岗","13","鹤岗");
+        
+one_subcat[112] = new Array("双鸭山","13","双鸭山");
+        
+one_subcat[113] = new Array("大庆","13","大庆");
+        
+one_subcat[114] = new Array("伊春","13","伊春");
+        
+one_subcat[115] = new Array("佳木斯","13","佳木斯");
+        
+one_subcat[116] = new Array("七台河","13","七台河");
+        
+one_subcat[117] = new Array("牡丹江","13","牡丹江");
+        
+one_subcat[118] = new Array("黑河","13","黑河");
+        
+one_subcat[119] = new Array("绥化","13","绥化");
+        
+one_subcat[120] = new Array("大兴安岭","13","大兴安岭");
+        
+one_subcat[121] = new Array("郑州","14","郑州");
+        
+one_subcat[122] = new Array("开封","14","开封");
+        
+one_subcat[123] = new Array("洛阳","14","洛阳");
+        
+one_subcat[124] = new Array("平顶山","14","平顶山");
+        
+one_subcat[125] = new Array("安阳","14","安阳");
+        
+one_subcat[126] = new Array("鹤壁","14","鹤壁");
+        
+one_subcat[127] = new Array("新乡","14","新乡");
+        
+one_subcat[128] = new Array("焦作","14","焦作");
+        
+one_subcat[129] = new Array("濮阳","14","濮阳");
+        
+one_subcat[130] = new Array("许昌","14","许昌");
+        
+one_subcat[131] = new Array("漯河","14","漯河");
+        
+one_subcat[132] = new Array("三门峡","14","三门峡");
+        
+one_subcat[133] = new Array("南阳","14","南阳");
+        
+one_subcat[134] = new Array("商丘","14","商丘");
+        
+one_subcat[135] = new Array("信阳","14","信阳");
+        
+one_subcat[136] = new Array("周口","14","周口");
+        
+one_subcat[137] = new Array("驻马店","14","驻马店");
+        
+one_subcat[138] = new Array("武汉","15","武汉");
+        
+one_subcat[139] = new Array("黄石","15","黄石");
+        
+one_subcat[140] = new Array("十堰","15","十堰");
+        
+one_subcat[141] = new Array("宜昌","15","宜昌");
+        
+one_subcat[142] = new Array("襄樊","15","襄樊");
+        
+one_subcat[143] = new Array("鄂州","15","鄂州");
+        
+one_subcat[144] = new Array("荆门","15","荆门");
+        
+one_subcat[145] = new Array("孝感","15","孝感");
+        
+one_subcat[146] = new Array("荆州","15","荆州");
+        
+one_subcat[147] = new Array("黄冈","15","黄冈");
+        
+one_subcat[148] = new Array("咸宁","15","咸宁");
+        
+one_subcat[149] = new Array("随州","15","随州");
+        
+one_subcat[150] = new Array("恩施","15","恩施");
+        
+one_subcat[151] = new Array("长沙","16","长沙");
+        
+one_subcat[152] = new Array("株洲","16","株洲");
+        
+one_subcat[153] = new Array("湘潭","16","湘潭");
+        
+one_subcat[154] = new Array("衡阳","16","衡阳");
+        
+one_subcat[155] = new Array("邵阳","16","邵阳");
+        
+one_subcat[156] = new Array("岳阳","16","岳阳");
+        
+one_subcat[157] = new Array("常德","16","常德");
+        
+one_subcat[158] = new Array("张家界","16","张家界");
+        
+one_subcat[159] = new Array("益阳","16","益阳");
+        
+one_subcat[160] = new Array("郴州","16","郴州");
+        
+one_subcat[161] = new Array("永州","16","永州");
+        
+one_subcat[162] = new Array("怀化","16","怀化");
+        
+one_subcat[163] = new Array("娄底","16","娄底");
+        
+one_subcat[164] = new Array("湘西","16","湘西");
+        
+one_subcat[165] = new Array("合肥","17","合肥");
+        
+one_subcat[166] = new Array("芜湖","17","芜湖");
+        
+one_subcat[167] = new Array("蚌埠","17","蚌埠");
+        
+one_subcat[168] = new Array("淮南","17","淮南");
+        
+one_subcat[169] = new Array("马鞍山","17","马鞍山");
+        
+one_subcat[170] = new Array("淮北","17","淮北");
+        
+one_subcat[171] = new Array("铜陵","17","铜陵");
+        
+one_subcat[172] = new Array("安庆","17","安庆");
+        
+one_subcat[173] = new Array("黄山","17","黄山");
+        
+one_subcat[174] = new Array("滁州","17","滁州");
+        
+one_subcat[175] = new Array("阜阳","17","阜阳");
+        
+one_subcat[176] = new Array("宿州","17","宿州");
+        
+one_subcat[177] = new Array("巢湖","17","巢湖");
+        
+one_subcat[178] = new Array("六安","17","六安");
+        
+one_subcat[179] = new Array("亳州","17","亳州");
+        
+one_subcat[180] = new Array("池州","17","池州");
+        
+one_subcat[181] = new Array("宣城","17","宣城");
+        
+one_subcat[182] = new Array("呼和浩特","18","呼和浩特");
+        
+one_subcat[183] = new Array("包头","18","包头");
+        
+one_subcat[184] = new Array("乌海","18","乌海");
+        
+one_subcat[185] = new Array("赤峰","18","赤峰");
+        
+one_subcat[186] = new Array("通辽","18","通辽");
+        
+one_subcat[187] = new Array("鄂尔多斯","18","鄂尔多斯");
+        
+one_subcat[188] = new Array("呼伦贝尔","18","呼伦贝尔");
+        
+one_subcat[189] = new Array("兴安盟","18","兴安盟");
+        
+one_subcat[190] = new Array("锡林郭勒盟","18","锡林郭勒盟");
+        
+one_subcat[191] = new Array("乌兰察布盟","18","乌兰察布盟");
+        
+one_subcat[192] = new Array("巴彦淖尔盟","18","巴彦淖尔盟");
+        
+one_subcat[193] = new Array("阿拉善盟","18","阿拉善盟");
+        
+one_subcat[194] = new Array("南昌","19","南昌");
+        
+one_subcat[195] = new Array("景德镇","19","景德镇");
+        
+one_subcat[196] = new Array("萍乡","19","萍乡");
+        
+one_subcat[197] = new Array("九江","19","九江");
+        
+one_subcat[198] = new Array("新余","19","新余");
+        
+one_subcat[199] = new Array("鹰潭","19","鹰潭");
+        
+one_subcat[200] = new Array("赣州","19","赣州");
+        
+one_subcat[201] = new Array("吉安","19","吉安");
+        
+one_subcat[202] = new Array("宜春","19","宜春");
+        
+one_subcat[203] = new Array("抚州","19","抚州");
+        
+one_subcat[204] = new Array("上饶","19","上饶");
+        
+one_subcat[205] = new Array("长春","20","长春");
+        
+one_subcat[206] = new Array("吉林","20","吉林");
+        
+one_subcat[207] = new Array("四平","20","四平");
+        
+one_subcat[208] = new Array("辽源","20","辽源");
+        
+one_subcat[209] = new Array("通化","20","通化");
+        
+one_subcat[210] = new Array("白山","20","白山");
+        
+one_subcat[211] = new Array("松原","20","松原");
+        
+one_subcat[212] = new Array("白城","20","白城");
+        
+one_subcat[213] = new Array("延边","20","延边");
+        
+one_subcat[214] = new Array("沈阳","21","沈阳");
+        
+one_subcat[215] = new Array("大连","21","大连");
+        
+one_subcat[216] = new Array("鞍山","21","鞍山");
+        
+one_subcat[217] = new Array("抚顺","21","抚顺");
+        
+one_subcat[218] = new Array("本溪","21","本溪");
+        
+one_subcat[219] = new Array("丹东","21","丹东");
+        
+one_subcat[220] = new Array("锦州","21","锦州");
+        
+one_subcat[221] = new Array("营口","21","营口");
+        
+one_subcat[222] = new Array("阜新","21","阜新");
+        
+one_subcat[223] = new Array("辽阳","21","辽阳");
+        
+one_subcat[224] = new Array("盘锦","21","盘锦");
+        
+one_subcat[225] = new Array("铁岭","21","铁岭");
+        
+one_subcat[226] = new Array("朝阳","21","朝阳");
+        
+one_subcat[227] = new Array("葫芦岛","21","葫芦岛");
+        
+one_subcat[228] = new Array("银川","22","银川");
+        
+one_subcat[229] = new Array("石嘴山","22","石嘴山");
+        
+one_subcat[230] = new Array("吴忠","22","吴忠");
+        
+one_subcat[231] = new Array("固原","22","固原");
+        
+one_subcat[232] = new Array("西宁","23","西宁");
+        
+one_subcat[233] = new Array("海东","23","海东");
+        
+one_subcat[234] = new Array("海北","23","海北");
+        
+one_subcat[235] = new Array("黄南","23","黄南");
+        
+one_subcat[236] = new Array("海南","23","海南");
+        
+one_subcat[237] = new Array("果洛","23","果洛");
+        
+one_subcat[238] = new Array("玉树","23","玉树");
+        
+one_subcat[239] = new Array("海西","23","海西");
+        
+one_subcat[240] = new Array("太原","24","太原");
+        
+one_subcat[241] = new Array("大同","24","大同");
+        
+one_subcat[242] = new Array("阳泉","24","阳泉");
+        
+one_subcat[243] = new Array("长治","24","长治");
+        
+one_subcat[244] = new Array("晋城","24","晋城");
+        
+one_subcat[245] = new Array("朔州","24","朔州");
+        
+one_subcat[246] = new Array("晋中","24","晋中");
+        
+one_subcat[247] = new Array("运城","24","运城");
+        
+one_subcat[248] = new Array("忻州","24","忻州");
+        
+one_subcat[249] = new Array("临汾","24","临汾");
+        
+one_subcat[250] = new Array("吕梁","24","吕梁");
+        
+one_subcat[251] = new Array("济南","25","济南");
+        
+one_subcat[252] = new Array("青岛","25","青岛");
+        
+one_subcat[253] = new Array("淄博","25","淄博");
+        
+one_subcat[254] = new Array("枣庄","25","枣庄");
+        
+one_subcat[255] = new Array("东营","25","东营");
+        
+one_subcat[256] = new Array("烟台","25","烟台");
+        
+one_subcat[257] = new Array("潍坊","25","潍坊");
+        
+one_subcat[258] = new Array("济宁","25","济宁");
+        
+one_subcat[259] = new Array("泰安","25","泰安");
+        
+one_subcat[260] = new Array("威海","25","威海");
+        
+one_subcat[261] = new Array("日照","25","日照");
+        
+one_subcat[262] = new Array("莱芜","25","莱芜");
+        
+one_subcat[263] = new Array("临沂","25","临沂");
+        
+one_subcat[264] = new Array("德州","25","德州");
+        
+one_subcat[265] = new Array("聊城","25","聊城");
+        
+one_subcat[266] = new Array("滨州","25","滨州");
+        
+one_subcat[267] = new Array("荷泽","25","荷泽");
+        
+one_subcat[268] = new Array("成都","26","成都");
+        
+one_subcat[269] = new Array("自贡","26","自贡");
+        
+one_subcat[270] = new Array("攀枝花","26","攀枝花");
+        
+one_subcat[271] = new Array("泸州","26","泸州");
+        
+one_subcat[272] = new Array("德阳","26","德阳");
+        
+one_subcat[273] = new Array("绵阳","26","绵阳");
+        
+one_subcat[274] = new Array("广元","26","广元");
+        
+one_subcat[275] = new Array("遂宁","26","遂宁");
+        
+one_subcat[276] = new Array("内江","26","内江");
+        
+one_subcat[277] = new Array("乐山","26","乐山");
+        
+one_subcat[278] = new Array("南充","26","南充");
+        
+one_subcat[279] = new Array("眉山","26","眉山");
+        
+one_subcat[280] = new Array("宜宾","26","宜宾");
+        
+one_subcat[281] = new Array("广安","26","广安");
+        
+one_subcat[282] = new Array("达州","26","达州");
+        
+one_subcat[283] = new Array("雅安","26","雅安");
+        
+one_subcat[284] = new Array("巴中","26","巴中");
+        
+one_subcat[285] = new Array("资阳","26","资阳");
+        
+one_subcat[286] = new Array("阿坝","26","阿坝");
+        
+one_subcat[287] = new Array("甘孜","26","甘孜");
+        
+one_subcat[288] = new Array("凉山","26","凉山");
+        
+one_subcat[289] = new Array("和平区","27","和平区");
+        
+one_subcat[290] = new Array("拉萨","28","拉萨");
+        
+one_subcat[291] = new Array("昌都","28","昌都");
+        
+one_subcat[292] = new Array("山南","28","山南");
+        
+one_subcat[293] = new Array("日喀则","28","日喀则");
+        
+one_subcat[294] = new Array("那曲","28","那曲");
+        
+one_subcat[295] = new Array("阿里","28","阿里");
+        
+one_subcat[296] = new Array("林芝","28","林芝");
+        
+one_subcat[297] = new Array("乌鲁木齐","29","乌鲁木齐");
+        
+one_subcat[298] = new Array("克拉玛依","29","克拉玛依");
+        
+one_subcat[299] = new Array("吐鲁番","29","吐鲁番");
+        
+one_subcat[300] = new Array("哈密","29","哈密");
+        
+one_subcat[301] = new Array("昌吉","29","昌吉");
+        
+one_subcat[302] = new Array("博尔塔拉","29","博尔塔拉");
+        
+one_subcat[303] = new Array("巴音郭楞","29","巴音郭楞");
+        
+one_subcat[304] = new Array("阿克苏","29","阿克苏");
+        
+one_subcat[305] = new Array("克孜勒苏","29","克孜勒苏");
+        
+one_subcat[306] = new Array("喀什","29","喀什");
+        
+one_subcat[307] = new Array("和田","29","和田");
+        
+one_subcat[308] = new Array("伊犁","29","伊犁");
+        
+one_subcat[309] = new Array("塔城","29","塔城");
+        
+one_subcat[310] = new Array("阿勒泰","29","阿勒泰");
+        
+one_subcat[311] = new Array("昆明","30","昆明");
+        
+one_subcat[312] = new Array("曲靖","30","曲靖");
+        
+one_subcat[313] = new Array("玉溪","30","玉溪");
+        
+one_subcat[314] = new Array("保山","30","保山");
+        
+one_subcat[315] = new Array("昭通","30","昭通");
+        
+one_subcat[316] = new Array("楚雄","30","楚雄");
+        
+one_subcat[317] = new Array("红河","30","红河");
+        
+one_subcat[318] = new Array("文山","30","文山");
+        
+one_subcat[319] = new Array("思茅","30","思茅");
+        
+one_subcat[320] = new Array("西双版纳","30","西双版纳");
+        
+one_subcat[321] = new Array("大理","30","大理");
+        
+one_subcat[322] = new Array("德宏","30","德宏");
+        
+one_subcat[323] = new Array("丽江","30","丽江");
+        
+one_subcat[324] = new Array("怒江","30","怒江");
+        
+one_subcat[325] = new Array("迪庆","30","迪庆");
+        
+one_subcat[326] = new Array("临沧","30","临沧");
+        
+one_subcat[327] = new Array("西安","31","西安");
+        
+one_subcat[328] = new Array("铜川","31","铜川");
+        
+one_subcat[329] = new Array("宝鸡","31","宝鸡");
+        
+one_subcat[330] = new Array("咸阳","31","咸阳");
+        
+one_subcat[331] = new Array("渭南","31","渭南");
+        
+one_subcat[332] = new Array("延安","31","延安");
+        
+one_subcat[333] = new Array("汉中","31","汉中");
+        
+one_subcat[334] = new Array("榆林","31","榆林");
+        
+one_subcat[335] = new Array("安康","31","安康");
+        
+one_subcat[336] = new Array("商洛","31","商洛");
+        
+one_subcat[337] = new Array("台北","32","台北");
+        
+one_subcat[338] = new Array("高雄","32","高雄");
+        
+one_subcat[339] = new Array("其他","32","其他");
+        
+one_subcat[340] = new Array("香港","33","香港");
+        
+one_subcat[341] = new Array("澳门","34","澳门");
+        
+one_subcat[342] = new Array("西城区","1","西城区");
+        
+one_subcat[343] = new Array("崇文区","1","崇文区");
+        
+one_subcat[344] = new Array("宣武区","1","宣武区");
+        
+one_subcat[345] = new Array("朝阳区","1","朝阳区");
+        
+one_subcat[346] = new Array("海淀区","1","海淀区");
+        
+one_subcat[347] = new Array("丰台区","1","丰台区");
+        
+one_subcat[348] = new Array("石景山区","1","石景山区");
+        
+one_subcat[349] = new Array("房山区","1","房山区");
+        
+one_subcat[350] = new Array("通州区","1","通州区");
+        
+one_subcat[351] = new Array("顺义区","1","顺义区");
+        
+one_subcat[352] = new Array("大兴区","1","大兴区");
+        
+one_subcat[353] = new Array("昌平区","1","昌平区");
+        
+one_subcat[354] = new Array("平谷区","1","平谷区");
+        
+one_subcat[355] = new Array("怀柔区","1","怀柔区");
+        
+one_subcat[356] = new Array("门头沟区","1","门头沟区");
+        
+one_subcat[357] = new Array("密云县","1","密云县");
+        
+one_subcat[358] = new Array("延庆县","1","延庆县");
+        
+one_subcat[359] = new Array("卢湾区","2","卢湾区");
+        
+one_subcat[360] = new Array("徐汇区","2","徐汇区");
+        
+one_subcat[361] = new Array("长宁区","2","长宁区");
+        
+one_subcat[362] = new Array("静安区","2","静安区");
+        
+one_subcat[363] = new Array("普陀区","2","普陀区");
+        
+one_subcat[364] = new Array("闸北区","2","闸北区");
+        
+one_subcat[365] = new Array("虹口区","2","虹口区");
+        
+one_subcat[366] = new Array("杨浦区","2","杨浦区");
+        
+one_subcat[367] = new Array("闵行区","2","闵行区");
+        
+one_subcat[368] = new Array("宝山区","2","宝山区");
+        
+one_subcat[369] = new Array("嘉定区","2","嘉定区");
+        
+one_subcat[370] = new Array("松江区","2","松江区");
+        
+one_subcat[371] = new Array("青浦区","2","青浦区");
+        
+one_subcat[372] = new Array("奉贤区","2","奉贤区");
+        
+one_subcat[373] = new Array("金山区","2","金山区");
+        
+one_subcat[374] = new Array("浦东新区","2","浦东新区");
+        
+one_subcat[375] = new Array("崇明县","2","崇明县");
+        
+one_subcat[376] = new Array("河东区","27","河东区");
+        
+one_subcat[377] = new Array("河西区","27","河西区");
+        
+one_subcat[378] = new Array("南开区","27","南开区");
+        
+one_subcat[379] = new Array("河北区","27","河北区");
+        
+one_subcat[380] = new Array("红桥区","27","红桥区");
+        
+one_subcat[381] = new Array("滨海新区","27","滨海新区");
+        
+one_subcat[382] = new Array("东丽区","27","东丽区");
+        
+one_subcat[383] = new Array("西青区","27","西青区");
+        
+one_subcat[384] = new Array("津南区","27","津南区");
+        
+one_subcat[385] = new Array("北辰区","27","北辰区");
+        
+one_subcat[386] = new Array("武清区","27","武清区");
+        
+one_subcat[387] = new Array("宝坻区","27","宝坻区");
+        
+one_subcat[388] = new Array("蓟县","27","蓟县");
+        
+one_subcat[389] = new Array("宁河县","27","宁河县");
+        
+one_subcat[390] = new Array("静海县","27","静海县");
+        
+one_subcat[391] = new Array("九龙坡区","6","九龙坡区");
+        
+one_subcat[392] = new Array("江北区","6","江北区");
+        
+one_subcat[393] = new Array("沙坪坝区","6","沙坪坝区");
+        
+one_subcat[394] = new Array("南岸区","6","南岸区");
+        
+one_subcat[395] = new Array("大渡口区","6","大渡口区");
+        
+one_subcat[396] = new Array("北碚区","6","北碚区");
+        
+one_subcat[397] = new Array("万盛区","6","万盛区");
+        
+one_subcat[398] = new Array("双桥区","6","双桥区");
+        
+one_subcat[399] = new Array("渝北区","6","渝北区");
+        
+one_subcat[400] = new Array("巴南区","6","巴南区");
+        
+one_subcat[401] = new Array("万州区","6","万州区");
+        
+one_subcat[402] = new Array("涪陵区","6","涪陵区");
+        
+one_subcat[403] = new Array("黔江区","6","黔江区");
+        
+one_subcat[404] = new Array("长寿区","6","长寿区");
+        
+one_subcat[405] = new Array("江津区","6","江津区");
+        
+one_subcat[406] = new Array("合川区","6","合川区");
+        
+one_subcat[407] = new Array("永川区","6","永川区");
+        
+one_subcat[408] = new Array("南川区","6","南川区");
+        
+one_subcat[409] = new Array("綦江县","6","綦江县");
+        
+one_subcat[410] = new Array("潼南县","6","潼南县");
+        
+one_subcat[411] = new Array("铜梁县","6","铜梁县");
+        
+one_subcat[412] = new Array("大足县","6","大足县");
+        
+one_subcat[413] = new Array("荣昌县","6","荣昌县");
+        
+one_subcat[414] = new Array("璧山县","6","璧山县");
+        
+one_subcat[415] = new Array("梁平县","6","梁平县");
+        
+one_subcat[416] = new Array("城口县","6","城口县");
+        
+one_subcat[417] = new Array("丰都县","6","丰都县");
+        
+one_subcat[418] = new Array("垫江县","6","垫江县");
+        
+one_subcat[419] = new Array("武隆县","6","武隆县");
+        
+one_subcat[420] = new Array("忠县","6","忠县");
+        
+one_subcat[421] = new Array("开县","6","开县");
+        
+one_subcat[422] = new Array("云阳县","6","云阳县");
+        
+one_subcat[423] = new Array("奉节县","6","奉节县");
+        
+one_subcat[424] = new Array("巫山县","6","巫山县");
+        
+one_subcat[425] = new Array("巫溪县","6","巫溪县");
+        
+one_subcat[426] = new Array("石柱县","6","石柱县");
+        
+one_subcat[427] = new Array("秀山县","6","秀山县");
+        
+one_subcat[428] = new Array("酉阳县","6","酉阳县");
+        
+one_subcat[429] = new Array("彭水县","6","彭水县");
+        
+one_count=430;
+
+function changelocation_top(locationid)
+    {
+    document.formsubmit.shi.length = 1; 
+    var locationid=locationid;
+    var i;
+    for (i=0;i < one_count; i++)
+        {
+            if (one_subcat[i][1] == locationid)
+            { 
+                document.formsubmit.shi.options[document.formsubmit.shi.length] = new Option(one_subcat[i][0], one_subcat[i][2]);
+            }        
+        }
+
+    }
+
+function changelocation_top2(locationid)
+    {
+    document.formsubmit2.shi.length = 1; 
+    var locationid=locationid;
+    var i;
+    for (i=0;i < one_count; i++)
+        {
+            if (one_subcat[i][1] == locationid)
+            { 
+                document.formsubmit2.shi.options[document.formsubmit2.shi.length] = new Option(one_subcat[i][0], one_subcat[i][2]);
+            }        
+        }
+
+    } 
+	
+function getSelected_Text(name){
+var obj=document.getElementById(name);
+for(i=0;i<obj.length;i++){
+   if(obj[i].selected==true){
+    formsubmit.sheng_hidden.value=obj[i].innerText;      //关键是通过option对象的innerText属性获取到选项文本
+   }
+}
+//alert(getSelectedText('user_add'))
+//alert(formsubmit.sheng_hidden.value)
+}
+function getSelected_Text1(name){
+var obj=document.getElementById('sheng1');
+for(i=0;i<obj.length;i++){
+   if(obj[i].selected==true){
+	   //alert(obj[i].innerText);
+    document.getElementById('sheng_hidden1').value=obj[i].innerText;      //关键是通过option对象的innerText属性获取到选项文本
+   }
+}
+//alert(getSelectedText('user_add'))
+//alert(formsubmit.sheng_hidden.value)
+}
+</script>
+<table width="980"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+   
+  </tr>
+</table>
+
+<table width="980"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="5" background="images/top_mubiao.gif"></td>
+  </tr>
+</table>
+<table width="980"  border="0" align="center" cellpadding="5" cellspacing="1" bgcolor="#AACCEE">
+  <tr>
+    <td height="24" valign="top" bgcolor="#F3F8FD"><span class="text STYLE3">物品详情：</span></td>
+  </tr>
+</table>
+
+<table width="980"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top" height="6"></td>
+  </tr>
+          <tr>
+            <td height="30" class="text" style="color:#999999 "><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="370" height="270" valign="top"><img name="product_pic" src="image/yipan.jpg" width="282" height="250" alt="" />
+                  <table  border="0" cellpadding="4" cellspacing="1" bgcolor="#CCCCCC">
+                  
+                </table></td>
+                <td valign="top"><table width="400"  border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="65" height="25" class="text">物品名称：</td>
+                    <td width="335" class="text"><b>希捷硬盘</b></td>
+                  </tr>
+                  <tr>
+                    <td height="25" class="text">想换什么：</td>
+                    <td class="text">想换鞋子，平板电脑</td>
+                  </tr>
+                  <tr>
+                    <td height="1" colspan="2" class="text" background="images/line.gif"></td>
+                  </tr>
+                  <tr>
+                    <td height="25" class="text">新旧程度：</td>
+                    <td class="lvse" style="font-size:12px">8成新</td>
+                  </tr>
+                  <tr>
+                    <td height="25" class="text">物品地址：</td>
+                    <td class="text">陕西西安</td>
+                  </tr>
+                  <tr>
+                    <td height="25" class="text">街道地址：</td>
+                    <td class="text" style="font-size:12px"> 西沣路</td>
+                  </tr>
+                  <tr>
+                    <td height="25" class="huise" style="font-size:12px">发布日期：</td>
+                    <td class="huise" style="font-size:12px">2013-6-23</td>
+                  </tr>
+				  
+				  <tr>
+                    <td height="40" colspan="2" class="text"><table width="100%"  border="0" cellpadding="0" cellspacing="1" bgcolor="#E4E4E4">
+                      <tr bgcolor="#FFFFFF">
+
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td height="25" class="text">是否同城：</td>
+                    <td class="huangse" style="font-size:12px">只限同城交换</td>
+                  </tr>
+                  <tr>
+                    <td height="25" class="text">交换范围：</td>
+                    <td class="text">长安区</td>
+                  </tr>
+                  <tr>
+                    
+                 
+                  </tr>
+
+                </table>
+                  <table width="98%"  border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#C9DFF5" onMouseMove="javascript:this.style.backgroundColor='#AACCEE'" onMouseOut="javascript:this.style.backgroundColor='#C9DFF5'">
+            <tr>
+              
+            </tr>
+          </table></td>
+                    </tr>
+                </table></td>
+                <td width="200" valign="top"><table width="100%"  border="0" cellpadding="0" cellspacing="1" bgcolor="#AACCEE">
+                  <tr>
+                    <td height="25" background="images/text_bg.gif"><table width="96%"  border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td align="left">用户资料</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td  height="242" valign="top" bgcolor="#F8FBFE">
+                        <table width="98%"  border="0" align="center" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td height="10" colspan="3" align="right" class="text"><table width="100%"  border="0" cellpadding="0" cellspacing="5" style="font-size:12px;">
+                              <tr>
+                                <td width="65" height="72"><a href="user_show.asp?user_id=13328" target="_parent" title="253142044">
+                                  
+                                  <img src="images/no_hand.gif" width="60" height="60" border="1" style="border:1px solid #aaccee;">
+                                  
+                                </a></td>
+                                <td valign="middle"><table width="98%"  border="0" align="right" cellpadding="0" cellspacing="0" style="font-size:12px;">
+                                  <tr>
+                                    <td height="20"><b>123</b></td>
+                                  </tr>
+                                  <tr>
+								   <td height="20" style="font-size:12px;">陕西西安</td>
+                                  </tr>
+                                  <tr>
+								   <td height="20" style="font-size:12px;">性别：我是帅哥</td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                            </table></td>
+                          </tr>
+						  <tr>
+                            <td colspan="3" height="1" background="images/line.gif"></td>
+                          </tr>
+                          <tr>
+                            <td height="25" colspan="2" align="right" class="text"><div align="right">信 用 度：</div></td>
+                            <td width="97" class="text"><img src="images/credit/b.gif" width="18" height="15"></td>
+                          </tr>
+                          
+                          <tr>
+                            <td height="25" colspan="2" align="right" class="text"><div align="right">Q Q 交谈：</div></td>
+                            <td class="text"><a target=blank href=http://wpa.qq.com/msgrd?V=1&Uin=745330392&Site=易物网-有什么？换什么？Menu=yes><img border="0" src=http://wpa.qq.com/pa?p=1:745330392:17 alt="745330392"></a></td>
+                          </tr>
+                          
+                          <tr>
+                            <td width="58"></td>
+                            <td width="39"  height="6"></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" height="1" background="images/line.gif"></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td  height="6"></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td height="25" colspan="2" align="right" class="text"> <div align="right">发布物品： </div></td>
+                            <td class="text">1条</td>
+                          </tr>
+                          <tr>
+                            <td height="25" colspan="2" align="right" class="text"> <div align="right">注册时间： </div></td>
+                            <td class="text">2013-6-20</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td  height="6"></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" height="1" background="images/line.gif"></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td  height="6"></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td height="25" colspan="3" class="text">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td height="25" colspan="3" class="text"> </td></tr>      <tr>
+            <td class="title_text"></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+              </tr>						  
+                          <tr>
+                            <td></td>
+                            
+                            <td></td>
+                          </tr>
+                      </table>
+            </td>
+  </tr>
+</table></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="5"></td>
+  </tr>
+          <tr>
+            <td height="30" class="text"><table width="980"  border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="top"><table width="99%"  border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td background="images/nei_1.gif"><font size="8">物品瑕疵:</font></td>
+                        <td width="25">&nbsp;</td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td border="1" height="80" valign="top" class="text" style="border-width:1px;border-color:black;border-style:solid;line-height:25px"><span class="lvse">8成新</span>&nbsp;&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td background="images/nei_1.gif"><font size="8">物品详情：</font></td>
+                        <td width="25">&nbsp;</td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td height="200" valign="top" class="text" style="border-width:1px;border-color:black;border-style:solid;line-height:25px">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>
+                    
+
+      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><table width="100%" border="0">
+                      <tr>
+                        
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td height="6"></td>
+                  </tr>
+                </table></td>
+                <td width="200" valign="top"><meta http-equiv="Content-Type" content="text/html; charset=gb2312"></td>
+              </tr>
+            </table></td>
+  </tr>
+          <tr>
+            <td height="6"></td>
+          </tr>
+</table>
+          </td>
+          </tr>
+          </table>
+          </td>
+          </tr>
+<tr>
+    <td valign="top" height="6"></td>
+</tr>
+</table>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</body>
+</html>
