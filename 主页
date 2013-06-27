@@ -1,0 +1,363 @@
+主页代码
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>数码产品主页</title>
+
+<style>
+a:link {
+    color:blue;
+    text-decoration:none;
+    }
+a:visited {
+    color:blue;
+    text-decoration:none;
+    }
+  .login {
+	margin-top: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 2px;
+	border-top-color: #333;
+	border-right-color: #333;
+	border-bottom-color: #333;
+	border-left-color: #333;
+	border-bottom-style: solid;
+	height: 30px;
+}
+body {
+	width: 1000px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	height: 2000px;
+}
+.dengzhu {
+	background-color: #FFF;
+	float: left;
+	width: 200px;
+	margin-top: 0px;
+	margin-left: 60px;
+	height: 30px;
+	font-size: 24px;
+}
+.shewei {
+	font-size: 24px;
+	background-color: #FFF;
+	float: left;
+	height: 30px;
+	width: 500px;
+	text-align: center;
+}
+.guanggao {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 100px;
+	background-image: url(image/yishusheji53.jpg);
+}
+.guanspan{
+	font-size: 36px;
+	height: 30px;
+	width: 600px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	float: left;
+	font-style: italic;
+	color: #0F3;
+	}
+.guanggao img {
+	width: 1000px;
+	height: 70px;
+}
+.daohang {
+	margin-top: 5px;
+	color: #FFF;
+	background-image: url(image/bg2.jpg);
+	height: 30px;
+	width: 1000px;
+}
+.faceul {
+	font-size: 24px;
+	height: 30px;
+	width: 1000px;
+	margin: 0px;
+}
+.faceul li {
+	float: left;
+	list-style-type: none;
+	width: 150px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 30px;
+	text-align: center;
+}
+.zhushang {
+	height: 1200px;
+	width: 1000px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	border: 0.5px solid #FFF;
+}
+#id1 {
+	margin-left: 5px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width: 100px;
+}
+.zs1 {
+	height: 30px;
+	width: 200px;
+	margin-top: 5px;
+	border-bottom-width: thin;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #666;
+	border-left-color: #FFF;
+	border-bottom-style: solid;
+	background-image: url(image/1.GIF);
+	background-color: #093;
+	text-align: center;
+	font-style: italic;
+	color: #FC0;
+}
+.zs2 {
+	float: none;
+	height: 250px;
+	width: 1000px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.zs3 {
+	margin: 5px;
+	height: 230px;
+	width: 180px;
+	border: 0.5px solid #666;
+	float: left;
+}
+
+
+.zs3 img {
+	height: 180px;
+	width: 180px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 2px;
+}
+.sp1 {
+	font-size: 22px;
+	margin: 5px;
+	height: 30px;
+	width: 180px;
+	text-align: center;
+}
+.sousu
+{
+	margin: 5px;
+	height: 230px;
+	width: 200px;
+	float: left;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #FFF;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+</style>
+</head>
+
+<body>
+<?php 
+     if(!empty($_COOKIE['UserName'])){
+		 $UserName = $_COOKIE['UserName'];
+		 echo '
+		 <div class="login">
+    		<span class="dengzhu"><a href="mypage.php">'.$UserName.'</a>
+			<a href="loginout.php" >退出</a></span>
+    	</div>
+		 ';
+	 }
+	 else
+	 {
+		 echo '
+		 <div class="login">
+    		<span class="dengzhu"><a href="login.php">登录</a>
+    		<a href="regist.php" >注册</a></span>
+    	</div>';
+	 }
+
+?>
+<!--<div class="login">
+ <span class="dengzhu"><a href="login.php" >登陆</a>&nbsp;<a href="regist.php">注册</a></span>
+ <span class="shewei">设为主页</span>
+</div>-->
+<div class="guanggao">  <span class="guanspan"> <marquee direction="right" scrollamount="10">校园易物平台</marquee></span></div>
+<div class="daohang">
+  <ul class="faceul">
+   <li> <a href="index.php">首&nbsp;&nbsp;页</a></li>
+   <li> <a href="shuma.php" class="faceul" border="0">数码设备</a></li>
+   <li> 图书资料 </li>
+   <li> 生活用品 </li>
+   <li> 服装鞋帽 </li>
+  </ul>
+</div>
+<div class="zhushang" >
+
+<div class="zs1">
+  <span class="dengzhu" id="id1"> 最新上传</span></div>
+ <div class="zs2">
+  <div class="zs3"><marquee direction="right"  scrollamount="6">
+   <img src="image/shengxiao.jpg" width="160" height="160" /><br></marquee>
+   <span class="sp1"> 数码设备</span>
+  </div>
+  <div class="zs3"><marquee direction="right"  scrollamount="6">
+     <img src="image/shu1.jpg" width="160" height="160" /><br></marquee>
+   <span class="sp1"> 图书资料</span>
+  </div>
+  <div class="zs3"><marquee direction="right"  scrollamount="6">
+    <img src="image/sheng1.jpg" width="160" height="160" /><br></marquee>
+   <span class="sp1"> 生活用品</span>
+  </div>
+ <div class="zs3"><marquee direction="right"  scrollamount="6">
+    <img src="image/nvzhuang.jpg" width="160" height="160" /><br></marquee>
+   <span class="sp1"> 服装鞋帽</span>
+  </div>
+   <div class="sousu">
+  <br><br>
+    <form height="310px">&nbsp;&nbsp;&nbsp;
+       <center><input type="text" name="sou2" size="30" maxlength="111"  height="50px" weight=50px/><br></center><br><br>
+      <center><input type="image" name="搜索" src="image/search.jpg" /></center>
+    </form>
+   
+  </div>
+  
+ </div>
+
+  <div class="zs1">
+    <span class="dengzhu" id="id1"> 数码设备 </span>
+  </div>
+ <div class="zs2">
+  <div class="zs3"> <a href="shangpin.php" target="_blank"><img src="image/yipan.jpg" width="160" height="160" /></a><br>
+   <span class="sp1"> <a href="shangpin.php" target="_blank">硬盘</a></span>
+  </div>
+  <div class="zs3">
+     <img src="image/yipan.jpg" width="130" height="160" /><br>
+   <span class="sp1"> 硬盘</span>
+  </div>
+  <div class="zs3">
+    <img src="image/yipan.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 硬盘</span>
+  </div>
+  <div class="zs3">
+    <img src="image/yipan.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 硬盘</span>
+  </div>
+  <div class="zs3">
+    <img src="image/yipan.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 硬盘</span>
+  </div>
+  </div>
+   <div class="zs1">
+  <span class="dengzhu" id="id1">图书资料 </span>
+ </div>
+ <div class="zs2">
+  <div class="zs3">
+   <img src="image/zhuxian.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 围城</span>
+  </div>
+  <div class="zs3">
+    <img src="image/zhuxian.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 围城</span>
+  </div>
+  <div class="zs3">
+     <img src="image/zhuxian.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 围城</span>
+  </div>
+  <div class="zs3">
+     <img src="image/zhuxian.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 围城</span>
+  </div>
+  <div class="zs3">
+     <img src="image/zhuxian.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 围城</span>
+  </div>
+ </div>
+ 
+ <div class="zs1">
+  <span class="dengzhu" id="id1">生活用品 </span>
+ </div>
+ <div class="zs2">
+  <div class="zs3">
+   <img src="image/dianfengshan.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 电风扇</span>
+  </div>
+  <div class="zs3">
+    <img src="image/dianfengshan.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 电风扇</span>
+  </div>
+  <div class="zs3">
+     <img src="image/dianfengshan.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 电风扇</span>
+  </div>
+  <div class="zs3">
+     <img src="image/dianfengshan.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 电风扇</span>
+  </div>
+  <div class="zs3">
+     <img src="image/dianfengshan.jpg" width="160" height="160" /><br>
+   <span class="sp1"> 电风扇</span>
+  </div>
+ </div>
+ 
+ 
+ <div class="zs1">
+  <span class="dengzhu" id="id1">服装鞋帽</span>
+ </div>
+ <div class="zs2">
+  <div class="zs3">
+   <img src="image/tx.jpg" width="160" height="160" /><br>
+   <span class="sp1"> t恤</span>
+  </div>
+  <div class="zs3">
+    <img src="image/tx.jpg" width="160" height="160" /><br>
+   <span class="sp1"> t恤</span>
+  </div>
+  <div class="zs3">
+     <img src="image/tx.jpg" width="160" height="160" /><br>
+   <span class="sp1"> t恤</span>
+  </div>
+  <div class="zs3">
+     <img src="image/tx.jpg" width="160" height="160" /><br>
+   <span class="sp1"> t恤</span>
+  </div>
+  <div class="zs3">
+     <img src="image/tx.jpg" width="160" height="160" /><br>
+   <span class="sp1"> t恤</span>
+  </div>
+ </div>
+  
+  
+  
+  
+
+</div>
+</div>
+</body>
+</html>
