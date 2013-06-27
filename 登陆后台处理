@@ -1,0 +1,29 @@
+ <?php
+session_start();
+//获取用户的登录信息。用户名，密码，是否保存信息
+$UserName = $_POST['user_name'];
+$Password = $_POST['user_password'];
+//如果用户点击了保存登录信息，将Remember置为1，否则置为0
+$conn=mysql_connect("localhost","root","") or die("连接数据库服务器失败".mysql_error());
+mysql_select_db("phpbook",$conn) or die("连接数据库失败".mysql_error());
+mysql_query("set names 'utf8'");
+
+$mysql_command="select * from user where id='$UserName' and password = '$Password' ";
+$result = mysql_query($mysql_command,$conn);
+$row=mysql_fetch_array($result);
+if ($row)
+{
+  
+	if (!isset($_COOKIE["UserName"])){
+		setcookie("UserName",$UserName,(time()+604800)); 
+	}
+     
+   	//echo '<img src="IMG/logining.gif" style="margin-top:200px; margin-left:200px;"/>';
+	header("refresh:1;url=http://localhost/yiwu/mypage.php");
+}
+else
+{
+	//echo '<img src="IMG/fail.jpg" style="margin-top:200px; margin-left:200px;"/>';
+	header("refresh:1;url=http://localhost/yiwu/login.php");
+}
+?>
