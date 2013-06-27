@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>西电易物网---用户登录</title>
+<script language="javascript" type="text/javascript">
+function loginsubmit()
+{
+  //document.form1.content.value = document.frames.cnEditBox.getHTML(true);  
+  with (document.form1)
+       {
+      if (user_name.value=='')
+		    {
+			  alert("用户不能为空！");
+			  user_name.focus();
+			}
+	   
+	     else if (user_password.value=='')
+		    {
+			  alert("密码不能为空！");
+			  user_password.focus();
+			}
+	    else
+		    {
+			  form1.submit();
+			}		
+	   }
+}
+function checkEnter(){
+   	if(event.keyCode==13){//回车的参数是13
+       loginsubmit();//进入时先验证Login()
+       //event.returnValue = false;//验证没错误提交成功
+   	}
+}
+</script>
+</head>
+<body onkeypress="checkEnter()">
+<table width="980"  border="0" align="center" cellpadding="0" cellspacing="0">
+  	<tr>
+    <td valign="top"><table width="100%"  border="0" cellpadding="0" cellspacing="1" bgcolor="#AACCEE">
+    <tr>
+    <td height="25" ><table width="98%"  border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+    <td align="left">用户登陆</td>
+    <td width="29" align="left">&nbsp;</td>
+    </tr>
+    </table></td>
+    </tr>
+    <tr>
+        <td height="374" valign="middle" bgcolor="#FFFFFF"><table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+   			<tr>
+        	<td width="593" align="center"><img src="haha.gif" width="319" height="231"></td>
+        	<td width="360" align="center"><table width="291" border="0" cellspacing="0" cellpadding="0">
+          	<tr>
+            <form name="form1" action="login1.php" method="post">
+            <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+            	<tr>
+                <td width="31%" height="40" class="text">用户名：</td>
+                <td width="69%" height="30"><input type="text" name="user_name" id="user_name" style="width:180px; height:25px;BORDER-RIGHT: 
+                #AACCEE 1px solid;BORDER-TOP: #AACCEE 1px solid; BORDER-LEFT: #AACCEE 1px solid; BORDER-BOTTOM: #AACCEE 1px solid; "></td>
+              	</tr>
+              	<tr>
+                <td height="40" class="text">密&nbsp;&nbsp;码：</td>
+                <td height="30"><input type="password" name="user_password" id="user_password" style="width:180px; height:25px;BORDER-RIGHT: 
+                #AACCEE 1px solid;BORDER-TOP: #AACCEE 1px solid; BORDER-LEFT: #AACCEE 1px solid; BORDER-BOTTOM: #AACCEE 1px solid;"></td>
+              	</tr>
+              	<tr>
+                <td height="30" colspan="2"><table width="260" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                <td width="10" height="25" valign="top">&nbsp;</td>
+                <td width="69">[<a href="regist.php" target="_parent" class="text">注册</a>] </td>
+                <td width="181" height="50" align="center">
+                <!--<img src="log in.png" name="image" width="136" height="30" border="0" style="cursor:hand " onClick="loginsubmit()">-->
+                <input type="submit" value="登录"/>
+                </td>
+              	</tr>                
+           	</table>
+           	</form>
+          	</tr>
+        	</table></td>
+      </tr>
+    </table></td>
+      </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="6" colspan="2" bgcolor="#1E7DA5"></td>
+</tr>
+<tr>
+<td height="80" colspan="2" align="center" style="line-height:20px;font-size:12px">
+<a href="http://rs.xidian.edu.cn" target="_parent" class="lanse" style="font-size:12px ">关于本站</a> | 
+<a href="http://rs.xidian.edu.cn" target="_parent" class="lanse" style="font-size:12px ">服务条款</a> | 
+<a href="http://rs.xidian.edu.cn" target="_parent" class="lanse" style="font-size:12px ">客服中心</a>
+</br>
+客服QQ：332063776&nbsp;&nbsp;客服电话：15829611068&nbsp;&nbsp;邮箱：332063776@qq.com
+</td>
+</tr>
+</table>
+</body>
+</html>
